@@ -1,43 +1,39 @@
-<?php
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AFIRM - Data Collector Recruitment</title>
+</head>
+<body>
+	<h1>Welcome to AFIRM</h1>
+	<p>We are a US-based company located in California that recruits data collectors for businesses. Please fill out the form below to apply:</p>
+	<form method="post" action="submit_form.php">
+		<label for="name">Name:</label>
+		<input type="text" name="name" id="name" required><br>
 
-echo "# AFIRM Website\n";
+		<label for="dob">Date of Birth:</label>
+		<input type="date" name="dob" id="dob" required><br>
 
-echo "This website is designed for AFIRM, a USA-based company that recruits data collectors for other companies. The website allows applicants to submit their details, including their name, date of birth, address, education, SSN, access to a smartphone or laptop, and phone number.\n\n";
+		<label for="address">Address:</label>
+		<input type="text" name="address" id="address" required><br>
 
-echo "## Getting Started\n";
+		<label for="education">Education:</label>
+		<input type="text" name="education" id="education" required><br>
 
-echo "To use this website, simply navigate to the homepage at [https://www.afirm.com/](https://www.afirm.com/) and click on the \"Apply Now\" button. This will take you to a form where you can enter your details.\n\n";
+		<label for="ssn">SSN:</label>
+		<input type="text" name="ssn" id="ssn" required><br>
 
-echo "## Prerequisites\n";
+		<label for="access">Access to Smartphone or Laptop:</label>
+		<select name="access" id="access" required>
+			<option value="smartphone">Smartphone</option>
+			<option value="laptop">Laptop</option>
+			<option value="both">Both</option>
+			<option value="neither">Neither</option>
+		</select><br>
 
-echo "To use this website, you will need a web browser such as Google Chrome, Mozilla Firefox, or Safari.\n\n";
+		<label for="phone">Phone Number:</label>
+		<input type="tel" name="phone" id="phone" required><br>
 
-echo "## Installing\n";
-
-echo "There is no need to install any software to use this website. Simply navigate to the homepage and start using the website.\n\n";
-
-echo "## Built With\n";
-
-echo "- HTML\n";
-
-echo "- CSS\n";
-
-echo "- PHP\n";
-
-echo "- MySQL\n\n";
-
-echo "## Authors\n";
-
-echo "- John Doe\n\n";
-
-echo "## License\n";
-
-echo "This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.\n\n";
-
-echo "## Acknowledgments\n";
-
-echo "- The design of this website was inspired by XYZ.\n";
-
-echo "- Thanks to the developers who contributed to this project.\n";
-
-?>
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>
